@@ -1,0 +1,23 @@
+[package]
+name = "my_webview2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "my_webview2"
+path = "src/main.rs"
+# Tell Cargo to compile this binary for Windows GUI mode, not console mode.
+test = false
+bench = false
+
+[features]
+default = []
+windows = []
+
+[dependencies]
+wry = "0.34"
+image = "0.24"
+
+[build-dependencies]
+winres = "0.1"
